@@ -9,4 +9,4 @@ class ImagenMascota:
 
 imagen = ImagenMascota()
 
-# print(imagen.feliz)
+# print(imagen.inicio)
