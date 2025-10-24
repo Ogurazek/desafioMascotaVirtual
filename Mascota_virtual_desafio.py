@@ -29,7 +29,7 @@ class MascotaVirtual:
             print(self.nombre, "ha sido alimentado")
 
     def jugar(self):
-        pass
+        print("Hago el método jugar")
 
     def estado_animo(self):
         print("cambiando todo")
