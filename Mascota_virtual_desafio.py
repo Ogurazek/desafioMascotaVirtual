@@ -32,7 +32,7 @@ class MascotaVirtual:
         pass
 
     def estado_animo(self):
-        pass
+        print("cambiando todo")
 
     def presentacion(self):
         print(
