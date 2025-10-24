@@ -7,7 +7,7 @@ class MascotaVirtual:
     def __init__(self, nombre):
         self.nombre = nombre
         self.felicidad = 0
-        self.hambre = 0
+        self.hambre = 70
         self.imagen = imagen.inicio
         self.imagen_triste = imagen.triste
         self.imagen_feliz = imagen.feliz
@@ -45,6 +45,34 @@ class MascotaVirtual:
         )
 
 
-# Crear una instancia de MascotaVirtual
+interfaz_inicio = "\n╔════════════════════════════════════╗\n║       Bienvenido a tu primer       ║\n║          mascota virtual!          ║\n╚════════════════════════════════════╝\n"
+interfaz_juego = "\n╔════════════════════════════════════╗\n║       Opciones disponibles:        ║\n║                                    ║\n║ 1 - Alimentar            ║\n║ 4 - Salir                          ║\n║                                    ║\n╚════════════════════════════════════╝\n"
 
-# Si te animas crea una interfaz para poder interactuar con tu mascota
+
+print(interfaz_inicio)
+
+nombre = input("Elige un nombre para tu mascota: ")
+mascota = MascotaVirtual(nombre)
+mascota.presentacion()
+
+while True:
+    print(interfaz_juego)
+    opcion = int(input("Elija una opción: "))
+    if opcion == 1:
+        mascota.alimentar()
+    elif opcion == 4:
+        mascota.despedida()
+        break
+
+
+# Traten de hacerlo con el match, así práctican esa forma de hacerlo...
+
+
+# match opcion:
+# case "1":
+# mascota.alimentar()
+# case "4":
+# mascota.despedida()
+# break
+# case _:
+# default
