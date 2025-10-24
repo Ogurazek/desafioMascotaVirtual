@@ -30,6 +30,7 @@ class MascotaVirtual:
 
     def jugar(self):
         print("Hago el método jugar")
+        print("agregando otra cosa")
 
     def estado_animo(self):
         print("cambiando todo")
